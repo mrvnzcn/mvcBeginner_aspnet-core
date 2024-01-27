@@ -4,7 +4,7 @@ using basics.Models;
 
 namespace basics.Controllers;
 
-public class HomeController : Controller
+public class HomeController : Controller // un
 {
     private readonly ILogger<HomeController> _logger;
 
