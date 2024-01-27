@@ -3,14 +3,14 @@ using Microsoft.AspNetCore.Mvc;
 namespace basics.Controllers;
 
 public class CourseController: Controller {
-    public string Index()
+    public IActionResult Index()
     {
-        return "course/index";
+        return View();
     }
 
-    public string List()
+    public IActionResult List()
     {
-        return "course/list";
+        return View();
     }
 
 }
