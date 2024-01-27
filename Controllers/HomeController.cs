@@ -6,26 +6,13 @@ namespace basics.Controllers;
 
 public class HomeController : Controller // un
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    public string Index()
     {
-        _logger = logger;
+        return "home/index";
     }
 
-    public IActionResult Index()
+    public string Contact()
     {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        return "home/contact";
     }
 }
